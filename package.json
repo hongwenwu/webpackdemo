@@ -1,7 +1,11 @@
 {
   "name": "webpackdemo",
   "version": "1.0.0",
-  "description": "",
+  "description": "webpack demo description",
+  "repository": {
+    "type": "https",
+    "url": "https://github.com/hongwenwu/webpackdemo.git"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,11 +13,12 @@
     "server": "webpack-dev-server --config webpack.config.js --progress --colors --open",
     "build": "NODE_ENV=production webpack --config ./webpack.production.config.js --progress"
   },
-  "author": "",
+  "author": "arvin",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.55",
     "@babel/preset-env": "^7.0.0-beta.55",
+    "acorn": "^6.0.5",
     "autoprefixer": "^9.4.4",
     "babel": "^6.23.0",
     "babel-core": "^6.26.3",
